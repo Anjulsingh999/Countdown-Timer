@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(hero\ background.jpg);
+    background-size: cover;
+}
+
+.display_container {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background-image: url(background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    box-shadow: 0px 12px 24px -5px;
+    border-radius: 10px;
+}
+
+.display_timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 4rem;
+    color: white;
+    gap: 2rem;
+    font-weight: 900;
+}
+
+.sub_heading {
+    font-size: 5rem;
+    color: rgb(217, 255, 2);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.301);
+    padding: 3px 20px;
+    border-radius: 25px;
+
+}
+
+#year_num {
+    color: rgb(255, 221, 174);
+}
+
+.name_heading
+{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.34);
+}
+
+@media (max-width:930px) {
+    .sub_heading {
+        font-size: 3rem;
+    }
+
+    .display_timer {
+
+        font-size: 2rem;
+        gap: 1.3rem;
+
+    }
+
+    .title {
+        font-size: 0.7rem;
+        padding: 3px 20px;
+    }
+}
+
+@media (max-width:660px)  {
+    .sub_heading {
+        font-size: 2rem;
+    }
+
+    .display_timer {
+
+        font-size: 1.5rem;
+        gap: 1.3rem;
+    }
+    .title {
+        font-size: 0.5rem;
+        padding: 3px 15px;
+    }
+}
+
+@media (max-width:444px)  {
+    .sub_heading {
+        font-size: 1.3rem;
+    }
+
+    .display_timer {
+
+        font-size: 1rem;
+        gap: 1rem;
+    }
+    .title {
+        font-size: 0.4rem;
+        padding: 3px 8px;
+    }
+
+    .display_container {
+        width: 90%;
+        height: 60%;
+        gap: 0.8rem;
+      
+    }
+
+    .name_heading
+{
+    font-size: 12px;
+}
+}
